@@ -1,0 +1,250 @@
+{
+    "getMasterCategoryGroup": {
+        "data": [
+            {
+                "categoryGroupId": 0,
+                "categoryGroupName": "หมวดเคมี",
+                "categoryGroupAmount": 2414,
+                "categoryGroupItems": [
+                    {
+                        "categoryGroupItemId": 1,
+                        "categoryGroupItemName": "ยา",
+                        "categoryGroupItemAmount": 380,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 2,
+                        "categoryGroupItemName": "เมล็ดพันธุ์",
+                        "categoryGroupItemAmount": 468,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 3,
+                        "categoryGroupItemName": "อาหารสัตว์",
+                        "categoryGroupItemAmount": 130,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 4,
+                        "categoryGroupItemName": "ปุ๋ย",
+                        "categoryGroupItemAmount": 214,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 5,
+                        "categoryGroupItemName": "อุปกรณ์",
+                        "categoryGroupItemAmount": 562,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 6,
+                        "categoryGroupItemName": "พลาสติก",
+                        "categoryGroupItemAmount": 190,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 7,
+                        "categoryGroupItemName": "อุปกรณ์",
+                        "categoryGroupItemAmount": 412,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 8,
+                        "categoryGroupItemName": "ยางพารา",
+                        "categoryGroupItemAmount": 58,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    }
+                ]
+            },
+            {
+                "categoryGroupId": 1,
+                "categoryGroupName": "หมวดจักรกล",
+                "categoryGroupAmount": 6281,
+                "categoryGroupItems": [
+                    {
+                        "categoryGroupItemId": 10,
+                        "categoryGroupItemName": "แฮนด์ทูล",
+                        "categoryGroupItemAmount": 1252,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 12,
+                        "categoryGroupItemName": "ไฟฟ้า",
+                        "categoryGroupItemAmount": 1089,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 13,
+                        "categoryGroupItemName": "ท่อ PVC ข้อต่อ",
+                        "categoryGroupItemAmount": 394,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 14,
+                        "categoryGroupItemName": "อุปกรณ์ระบบน้ำ",
+                        "categoryGroupItemAmount": 296,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 15,
+                        "categoryGroupItemName": "สปริงเกอร์",
+                        "categoryGroupItemAmount": 597,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 18,
+                        "categoryGroupItemName": "พาวเวอร์ทูลล์",
+                        "categoryGroupItemAmount": 183,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 19,
+                        "categoryGroupItemName": "จักรกลPC",
+                        "categoryGroupItemAmount": 497,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 20,
+                        "categoryGroupItemName": "อะไหล่",
+                        "categoryGroupItemAmount": 891,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 21,
+                        "categoryGroupItemName": "ดอกสว่าน",
+                        "categoryGroupItemAmount": 632,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 22,
+                        "categoryGroupItemName": "ใบตัดใบเจียร์",
+                        "categoryGroupItemAmount": 202,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 23,
+                        "categoryGroupItemName": "สายพาน/โซ่/ลวดชุบ",
+                        "categoryGroupItemAmount": 248,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    }
+                ]
+            },
+            {
+                "categoryGroupId": 2,
+                "categoryGroupName": "หมวดก่อสร้าง",
+                "categoryGroupAmount": 2333,
+                "categoryGroupItems": [
+                    {
+                        "categoryGroupItemId": 30,
+                        "categoryGroupItemName": "ปูน หิน ทราย คอนกรีต อิฐบล็อค",
+                        "categoryGroupItemAmount": 149,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 31,
+                        "categoryGroupItemName": "เฌอร่า สังกะสี ลวดหนาม ไวร์เมช",
+                        "categoryGroupItemAmount": 189,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 32,
+                        "categoryGroupItemName": "กระเบื้อง บล็อกแก้ว",
+                        "categoryGroupItemAmount": 226,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 40,
+                        "categoryGroupItemName": "เหล็ก",
+                        "categoryGroupItemAmount": 227,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 41,
+                        "categoryGroupItemName": "ประตู PVC",
+                        "categoryGroupItemAmount": 343,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 43,
+                        "categoryGroupItemName": "สี TOA",
+                        "categoryGroupItemAmount": 442,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 45,
+                        "categoryGroupItemName": "สุขภัณฑ์",
+                        "categoryGroupItemAmount": 634,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 46,
+                        "categoryGroupItemName": "ของเหลว",
+                        "categoryGroupItemAmount": 123,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    }
+                ]
+            },
+            {
+                "categoryGroupId": 3,
+                "categoryGroupName": "หมวดอื่นๆ",
+                "categoryGroupAmount": 115,
+                "categoryGroupItems": [
+                    {
+                        "categoryGroupItemId": 50,
+                        "categoryGroupItemName": "อื่นๆ",
+                        "categoryGroupItemAmount": 17,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 90,
+                        "categoryGroupItemName": "ของแถมซื้อมาแจก",
+                        "categoryGroupItemAmount": 64,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    },
+                    {
+                        "categoryGroupItemId": 96,
+                        "categoryGroupItemName": "ให้เช่า",
+                        "categoryGroupItemAmount": 34,
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    "getBanner": {
+        "data": {
+            "bannerList": [
+                {
+                    "bannerId": 0,
+                    "bannerImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                    "bannerName": "สินค้ามาใหม่"
+                },
+                {
+                    "bannerId": 1,
+                    "bannerImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                    "bannerName": "สินค้าขายดี"
+                },
+                {
+                    "bannerId": 2,
+                    "bannerImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                    "bannerName": "สินค้าตามฤดูกาล"
+                },
+                {
+                    "bannerId": 3,
+                    "bannerImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                    "bannerName": "สินค้าโปรโมชัน"
+                },
+                {
+                    "bannerId": 4,
+                    "bannerImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                    "bannerName": "สินค้าน่าสนใจ"
+                },
+                {
+                    "bannerId": 5,
+                    "bannerImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                    "bannerName": "สินค้าทั่วไป"
+                }
+            ]
+        }
+    }
+}

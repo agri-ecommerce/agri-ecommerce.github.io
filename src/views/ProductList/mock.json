@@ -1,0 +1,109 @@
+{
+    "data": {
+        "limit": 20,
+        "pageNumber": 1,
+        "rowsOfPage": 10,
+        "productList": [
+            {
+                "productId": 0,
+                "productName": "ต้นปาล์มหมาก FONTE รุ่น LYGFK0110 สูง 160 ซม. สีเขียว",
+                "productImage": "string",
+                "productPrice": 250.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 1,
+                "productName": "ชั้นวางของสเตนเลสอเนกประสงค์แบบเข้ามุม 2 ชั้น VRH รุ่น HW105-W105A ขนาด28 x 28 x 36 ซม. สีเงิน",
+                "productImage": "string",
+                "productPrice": 350.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 2,
+                "productName": "สายยางใยเชือก 1/2 นิ้ว พร้อมโรล FONTE รุ่น HWT001 ยาว 10 เมตร",
+                "productImage": "string",
+                "productPrice": 3350.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 3,
+                "productName": "แผ่นผนัง KASSA รุ่น V106 ขนาด 25 x 297 x 0.7 ซม. สีขาวงาช้าง",
+                "productImage": "string",
+                "productPrice": 550.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 4,
+                "productName": "ชุดคลุมอาบน้ำ KASSA HOTEL ขนาดฟรีไซส์ สีขาว",
+                "productImage": "string",
+                "productPrice": 750.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 5,
+                "productName": "อ่างล้างจานฝังสเตนเลส 1 หลุม AXIA รุ่น TRITON 8250 ขนาด 82 ซม.",
+                "productImage": "string",
+                "productPrice": 1150.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 6,
+                "productName": "สว่านไขควงไร้สาย BOSCH รุ่น GSR 120-LI Gen 3 กำลัง 12 โวลต์ สีน้ำเงิน - ดำ",
+                "productImage": "string",
+                "productPrice": 2250.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 7,
+                "productName": "สว่านไร้สาย STANLEY รุ่น SCD700D2K-B1 กำลัง 20 โวลต์ สีเหลือง - ดำ",
+                "productImage": "string",
+                "productPrice": 2000.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 8,
+                "productName": "กระเบื้องพื้น LION รุ่น ไม้ละไม บราวน์ ขนาด 40 x 40 ซม. (กล่อง 6 แผ่น) สีน้ำตาล",
+                "productImage": "string",
+                "productPrice": 350.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            },
+            {
+                "productId": 9,
+                "productName": "กระเบื้องพื้น DIGITAL KASSA รุ่น KS-VNF011 ขนาด 50 x 50 ซม. (กล่อง 4 แผ่น) หลากสี ลายหินธรรมชาติ",
+                "productImage": "string",
+                "productPrice": 1250.00,
+                "productQty": 0,
+                "productUnitName": "ชิ้น",
+                "productCategoryGroupId": 1,
+                "productGroupId": 1
+            }
+        ]
+    }
+}
