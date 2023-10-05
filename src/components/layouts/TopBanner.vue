@@ -9,6 +9,9 @@
   width: 100%;
   height: 130px;
   background-color: rgb(100, 63, 41);
+  @media only screen and (max-width: 1900px) {
+      height: 90px;
+  }
 } 
 </style>
 

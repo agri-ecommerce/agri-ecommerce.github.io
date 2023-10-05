@@ -10,10 +10,14 @@
 <style scoped lang="scss">
 .container-app {
   max-width: 1920px;
-  margin: auto;
+  margin: 0 auto;
   // height: calc(100vh - 360px);
   background-color: #FFFDF9;
   padding: 0 100px;
+  @media only screen and (max-width: 1900px) {
+    max-width: 1366px;
+    padding: 0 40px;
+  }
 }
 </style>
 

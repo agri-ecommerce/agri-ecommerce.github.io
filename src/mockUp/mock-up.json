@@ -246,5 +246,17 @@
                 }
             ]
         }
-    }
+    },
+    "getUser": [
+        {
+            "username": "usertest",
+            "password": "123456",
+            "role":"User"
+        },
+        {
+            "username": "admintest",
+            "password": "123456",
+            "role":"Admin"
+        }
+    ]
 }

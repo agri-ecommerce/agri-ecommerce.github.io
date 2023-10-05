@@ -16,6 +16,9 @@
       <div class="list-item">
         <Banner></Banner>
         <h1>รายการสินค้า{{ filterName }}</h1>
+        <div>
+          <Group/>
+        </div>
         <div class="container-item">
           <div v-for="(item, index) in dataList?.productList" :key="index">
             <ItemProduct :data="item" />
@@ -70,6 +73,9 @@
         span {
           font-size: 18px;
           font-family: 'Kanit-Regular';
+          @media only screen and (max-width: 1400px) {
+            font-size: 14px;
+          }
         }
 
         div {
@@ -79,6 +85,10 @@
           font-family: 'Kanit-Regular';
           cursor: pointer;
           color: var(--vt-c-secondary);
+          @media only screen and (max-width: 1400px) {
+            margin-top: 6px;
+            font-size: 14px;
+          }
 
           &.active {
             color: var(--vt-c-primary);
@@ -123,6 +133,7 @@ import Banner from "@/components/layouts/Banner.vue";
 import { filters } from '@/common/filters';
 import ItemProduct from "@/components/layouts/ItemProduct.vue";
 import { useGetMasterCategoryGroup } from "./ProductListComposable";
+import Group from "@/components/layouts/Group.vue";
 import mock from './mock.json'
 export default defineComponent({
   name: "ProductList",
@@ -137,7 +148,8 @@ export default defineComponent({
   },
   components: {
     Banner,
-    ItemProduct
+    ItemProduct,
+    Group
   },
   created() {
     this.initData();

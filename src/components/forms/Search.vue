@@ -15,6 +15,11 @@
     border: none;
     font-size: 24px;
     padding-left: 24px;
+    @media only screen and (max-width: 1900px) {
+      width: 22vw;
+      height: 32px;
+      font-size: 20px;
+    }
   }
 
   label {

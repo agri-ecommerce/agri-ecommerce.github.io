@@ -26,12 +26,16 @@
 }
 
 .slider {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 0;
   width: 1400px;
   height: 380px;
   position: relative;
   overflow: hidden;
+  @media only screen and (max-width: 1900px) {
+    width: 1050px;
+    height: 300px;
+  }
 
   ul.slides {
     width: 100%;
@@ -42,6 +46,9 @@
     position: absolute;
     top: 0;
     transition: left 1400ms;
+    @media only screen and (max-width: 1900px) {
+      height: 300px;
+    }
 
     li {
       list-style-type: none;
@@ -49,6 +56,9 @@
 
       img {
         width: 1400px;
+        @media only screen and (max-width: 1900px) {
+          width: 1050px;
+        }
       }
     }
   }
@@ -74,33 +84,35 @@
     }
   }
 
-  .prev,
-  .next {
-    text-decoration: none;
-    color: #fff;
-    position: absolute;
-    z-index: 1;
-    font-size: 42px;
-    top: 43%;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
+  // .prev,
+  // .next {
+  //   text-decoration: none;
+  //   color: #fff;
+  //   position: absolute;
+  //   z-index: 1;
+  //   font-size: 42px;
+  //   top: 43%;
+  //   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  // }
 
-  .prev {
-    left: 20px;
-  }
+  // .prev {
+  //   left: 20px;
+  // }
 
-  .next {
-    right: 20px;
-  }
+  // .next {
+  //   right: 20px;
+  // }
 }
 
 .tab-banner {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
   border-bottom: 3px solid var(--vt-c-secondary);
+
   .tab{
     width: 100%;
     height: 70px;
@@ -111,8 +123,11 @@
     align-items: center;
     border-right:  1px solid var(--vt-c-black-opa);
     border-left:   1px solid var(--vt-c-black-opa);
-    
     cursor: pointer;
+    @media only screen and (max-width: 1900px) {
+      font-size: 18px;
+      height: 50px;
+    }
   }
   .tab-active {
     background-color: var(--vt-c-secondary);
@@ -170,6 +185,10 @@ export default defineComponent({
       timer: 0 as any,
     };
   },
+  created: function () {
+    this.play();
+    this.onResolution();
+  },
   methods: {
     nextSlide: function () {
       this.current++;
@@ -196,10 +215,13 @@ export default defineComponent({
       this.timer = setInterval(function () {
         app.nextSlide();
       }, 5000);
+    },
+    onResolution() {
+      let resolution = window.innerWidth;
+      if (resolution < 1900) {
+        this.width = 1050;
+      }
     }
   },
-  created: function () {
-    this.play();
-  }
 });
 </script>

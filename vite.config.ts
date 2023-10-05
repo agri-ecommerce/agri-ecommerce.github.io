@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
     plugins: [vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => tag === 'lottie-player',
+          isCustomElement: (tag) => tag === 'lottie-player' || tag === 'modal',
         },
       },
     }), vueJsx(), EnvironmentPlugin("all")],
