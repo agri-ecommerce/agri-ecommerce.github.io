@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
     }), vueJsx(), EnvironmentPlugin("all")],
     base: publicPath,
     build: {
-      outDir: "dist/shopping-online",
+      outDir: "dist",
     },
     resolve: {
       alias: {
