@@ -1,16 +1,15 @@
 <template>
-  <div class="container-product">
-    <h1>รายการสินค้า</h1>
-    <div class="container-item">
-      <div v-for="(item, index) in dataList?.productList" :key="index">
-        <ItemProduct :data="item" />
-      </div>
+  <div class="container-group">
+    <Banner></Banner>
+    <h1>กลุ่มรายการสินค้า</h1>
+    <div>
+      <Group @onSelectGroup="onSelectGroup" />
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.container-product {
+.container-group {
   h1 {
     font-size: 32px;
     font-family: 'Kanit-Medium';
@@ -42,39 +41,35 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Banner from "@/components/layouts/Banner.vue";
 import ItemProduct from "@/components/layouts/ItemProduct.vue";
-import mock from './mock.json'
+import Group from "@/components/layouts/Group.vue";
+import { path } from "@/common/path";
 export default defineComponent({
-  name: "ProductList",
+  name: "GroupList",
   data() {
     return {
-      dataList: {} as any,
+      paths: path as any,
     };
   },
   components: {
+    Banner,
     ItemProduct,
+    Group
   },
   created() {
     this.initData();
   },
-  computed: {
-    filterId() {
-      let filter: any = this.$route?.params?.filterId?.toString()
-      return parseInt(filter);
-    },
-  },
-  watch: {
-    async filterId() {
-      if(!this.filterId) {
-        await this.$store.dispatch('shop/setFilter', 0);
-      }
-      await this.$store.dispatch('shop/setFilter', this.filterId);
-    }
-  },
   methods: {
     async initData() {
-      this.dataList = mock.data;
     },
+    onSelectGroup(data: any) {
+      // this.$router.push({ path: `${this.paths.productList.path}/${data.categoryGroupItemId}` });
+      this.$router.push({
+        name: this.paths.productList.name,
+        params: { filterId: data },
+      })
+    }
   },
 });
 </script>

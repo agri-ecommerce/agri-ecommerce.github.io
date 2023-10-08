@@ -4,7 +4,7 @@
       <div @click="goto(path.productList.name)">หน้าหลัก</div>
       <div @mouseover="isMenu = 'สินค้าของเรา'">
         สินค้าของเรา
-        <IconArrowDown/>
+        <IconArrowDown :size="iconSize"/>
         <div class="menu-sub" v-if="isMenu === 'สินค้าของเรา'" @mouseleave="onExpand('สินค้าของเรา')">
           <span v-for="(item, index) in bannerList?.bannerList" :key="index">
             {{ item.bannerName }}
@@ -40,6 +40,10 @@
         margin-left: 32px;
         font-size: 14px;
       }
+      @media only screen and (max-width: 1024px) {
+        margin-left: 12px;
+        font-size: 12px;
+      }
     }
 
     .menu-sub {
@@ -53,6 +57,7 @@
       border-radius: 8px;
       margin: 0px 0px !important;
       background-color: var(--vt-c-white);
+      box-shadow: 0px 10px 16px var(--vt-c-black-opa);
 
       span {
         margin-bottom: 12px;
@@ -83,6 +88,7 @@ export default defineComponent({
       bannerList: {} as any,
       isMenu: "" as string,
       openModal: false,
+      iconSize: "16" as string
     };
   },
   components: {
@@ -92,6 +98,7 @@ export default defineComponent({
   },
   created() {
     this.initData();
+    this.onResolution();
   },
   methods: {
     async initData() {
@@ -110,6 +117,14 @@ export default defineComponent({
     toggleModal: function () {
       this.openModal = !this.openModal;
     },
+    onResolution() {
+      let resolution = window.innerWidth;
+      if (resolution < 1900) {
+        this.iconSize = "8";
+      } else if (resolution < 1300) {
+        this.iconSize = "4";
+      }
+    }
   },
 });
 </script>

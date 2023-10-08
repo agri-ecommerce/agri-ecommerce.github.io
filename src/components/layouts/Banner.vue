@@ -3,7 +3,7 @@
     <div class="slider">
       <ul class="slides" :style="{ left: -width * current + 'px' }">
         <li v-for="(item, index) in bannerList" :key="index">
-          <img :src="item?.bannerImage.toString()" alt="" :key="index" >
+          <img :src="item?.bannerImage.toString()" alt="" :key="index">
         </li>
       </ul>
       <!-- <ul class="bullets">
@@ -13,7 +13,8 @@
       <a class="next" href="#" @click.prevent="nextSlide">&#x25B6;</a> -->
     </div>
     <div class="tab-banner">
-      <div class="tab" v-for="(item, index) in bannerList" :key="index" :class="{'tab-active': current === index}" @click="selectSlide(index)">
+      <div class="tab" v-for="(item, index) in bannerList" :key="index" :class="{ 'tab-active': current === index }"
+        @click="selectSlide(index)">
         {{ item?.bannerName }}
       </div>
     </div>
@@ -32,9 +33,15 @@
   height: 380px;
   position: relative;
   overflow: hidden;
+
   @media only screen and (max-width: 1900px) {
     width: 1050px;
     height: 300px;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    width: 760px;
+    height: 200px;
   }
 
   ul.slides {
@@ -46,8 +53,13 @@
     position: absolute;
     top: 0;
     transition: left 1400ms;
+
     @media only screen and (max-width: 1900px) {
       height: 300px;
+    }
+
+    @media only screen and (max-width: 1300px) {
+      height: 760;
     }
 
     li {
@@ -56,8 +68,13 @@
 
       img {
         width: 1400px;
+
         @media only screen and (max-width: 1900px) {
           width: 1050px;
+        }
+
+        @media only screen and (max-width: 1300px) {
+          width: 760;
         }
       }
     }
@@ -113,7 +130,7 @@
   align-items: center;
   border-bottom: 3px solid var(--vt-c-secondary);
 
-  .tab{
+  .tab {
     width: 100%;
     height: 70px;
     display: flex;
@@ -121,19 +138,26 @@
     font-size: 28px;
     font-family: "Kanit-Medium";
     align-items: center;
-    border-right:  1px solid var(--vt-c-black-opa);
-    border-left:   1px solid var(--vt-c-black-opa);
+    border-right: 1px solid var(--vt-c-black-opa);
+    border-left: 1px solid var(--vt-c-black-opa);
     cursor: pointer;
+
     @media only screen and (max-width: 1900px) {
       font-size: 18px;
       height: 50px;
     }
+
+    @media only screen and (max-width: 1300px) {
+      font-size: 14px;
+      height: 40px;
+    }
   }
+
   .tab-active {
     background-color: var(--vt-c-secondary);
     color: var(--vt-c-white);
     // border-radius: 16px 16px 0px 0px;
-    }
+  }
 }
 </style>
 
@@ -220,6 +244,8 @@ export default defineComponent({
       let resolution = window.innerWidth;
       if (resolution < 1900) {
         this.width = 1050;
+      } else if (resolution < 1300) {
+        this.width = 760;
       }
     }
   },

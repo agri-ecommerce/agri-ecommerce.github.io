@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
     }), vueJsx(), EnvironmentPlugin("all")],
     base: publicPath,
     build: {
-      outDir: "dist",
+      outDir: "dist/shopping-online",
     },
     resolve: {
       alias: {
@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      port: 8000,
+      port: 8080,
     },
   };
   return config;

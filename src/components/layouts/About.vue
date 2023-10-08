@@ -11,6 +11,7 @@
   display: flex;
   height: 250px;
   padding: 0px 100px;
+  margin-top: 64px;
   background-color: var(--vt-c-primary);
 }
 

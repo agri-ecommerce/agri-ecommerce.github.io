@@ -1,9 +1,21 @@
 <template>
   <div class="container-group">
-    <div class="container-item-group" v-for="(item, index) in groupList" :key="index">
-      <div class="container-subitem-group">
-        <img src="../../assets/images/field.png" alt="">
-        <span>{{  item.categoryGroupItemName }}</span>
+    <div
+      class="container-item-group"
+      v-for="(item, index) in groupList"
+      :key="index"
+    >
+      <div
+        class="container-subitem-group"
+        @click="onSelectGroup(item.productGroupId)"
+      >
+        <div class="icon-img">
+          <img
+            :src="`data:image/png;base64,${item.productGroupImage}`"
+            alt=""
+          />
+        </div>
+        <span>{{ item.productGroupName }}</span>
       </div>
     </div>
   </div>
@@ -12,45 +24,63 @@
 <style scoped lang="scss">
 .container-group {
   display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   .container-item-group {
     gap: 12px;
 
-    .container-subitem-group{
+    .container-subitem-group {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 28px;
-      
-      img {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 12px;
 
+      .icon-img {
+        display: flex;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        
+        border-radius: 50%;
+        padding: 10px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: var(--vt-c-primary);
+        }
+        img {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 12px;
+          // border-radius: 50%;
+          
+        }
       }
 
       span {
         color: var(--vt-c-secondary);
         font-size: 20px;
         text-align: center;
+        font-family: 'Kanit-Medium';
         width: 120px;
       }
     }
   }
-  
 }
 </style>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useGetMasterCategoryGroup } from "./LayoutComposable";
+import { useGetMasterGroup } from "./LayoutComposable";
 
 export default defineComponent({
   name: "Group",
   data() {
     return {
-      groupList: [] as any
+      groupList: [] as any,
     };
   },
   created() {
@@ -58,12 +88,11 @@ export default defineComponent({
   },
   methods: {
     async initData() {
-      let resp: any = await useGetMasterCategoryGroup();
-      resp.forEach((item: any) => {
-        item.categoryGroupItems.forEach((subitem: any) => {
-          this.groupList.push(subitem)
-        });        
-      });
+      let resp: any = await useGetMasterGroup();
+      this.groupList = resp;
+    },
+    onSelectGroup(item: any) {
+      this.$emit("onSelectGroup", item);
     },
   },
 });

@@ -1,16 +1,16 @@
 <template>
-  <svg viewBox="0 0 16 4" class="hod-icon" :style="{ '--color-param': color, '--size-param': size }">
+  <svg viewBox="0 0 16 4" class="shopping-icon" :style="{ '--color-param': color, '--size-param': size }">
     <rect rx="2" />
   </svg>
 </template>
 
 <style lang="scss" scoped>
-.hod-icon {
+.shopping-icon {
   width: var(--size-param);
   height: calc(var(--size-param) / 4);
 }
 
-.hod-icon rect {
+.shopping-icon rect {
   width: var(--size-param);
   height: calc(var(--size-param) / 4);
   fill: var(--color-param);

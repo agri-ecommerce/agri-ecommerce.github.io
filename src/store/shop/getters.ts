@@ -13,6 +13,9 @@ const getters = {
   displayName(state: State) {
     return state.displayName;
   },
+  isFilter(state: State) {
+    return state.isFilter;
+  },
 };
 
 export default getters;

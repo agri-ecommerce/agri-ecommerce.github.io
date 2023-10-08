@@ -10,4 +10,12 @@ export default {
     }
     return false;
   },
+  async getMasterGroup() {
+    // const resp: any = await api.get('/getMasterCategoryGroup');
+    const resp: any = mock.getGroup;
+    if (resp) {
+      return resp;
+    }
+    return false;
+  },
 }

@@ -8,14 +8,14 @@
             <h1 class="modal-title">เข้าสู่ระบบ</h1>
             <div class="content-container">
               <div class="input-label">เบอร์โทรศัพท์ผู้ใช้งาน</div>
-              <input type="text" />
+              <input type="text" v-model="phoneNumber" />
               <div class="input-label">รหัสผ่าน</div>
-              <input type="password" />
+              <input type="password" v-model="password" />
             </div>
           </div>
           <div class="footer">
             <button @click="closeModal" class="btn-cancel">ยกเลิก</button>
-            <button class="btn-confirm" @click="closeModal">ตกลง</button>
+            <button class="btn-confirm" @click="signIn">ตกลง</button>
           </div>
         </div>
       </transition>
@@ -25,17 +25,24 @@
 
 <script>
 import { defineComponent } from "vue";
+import UserService  from "../../services/UserService";
+
 export default defineComponent({
   name: "SignInModal",
   props: ["showModal"],
   data() {
-    return {};
+    return {
+      phoneNumber: "",
+      password: "",
+    };
   },
   methods: {
     closeModal: function () {
       this.$emit("close");
     },
-    signIn: function () {
+    signIn: async function () {
+      const resp = await UserService.signIn(this.phoneNumber, this.password);
+      console.log(resp);
       this.closeModal();
     },
     created: function () {},
