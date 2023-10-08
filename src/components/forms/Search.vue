@@ -20,6 +20,11 @@
       height: 32px;
       font-size: 20px;
     }
+    @media only screen and (max-width: 1300px) {
+      width: 14vw;
+      height: 32px;
+      font-size: 20px;
+    }
   }
 
   label {

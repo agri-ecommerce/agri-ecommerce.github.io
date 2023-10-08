@@ -1,19 +1,9 @@
 <template>
   <div class="container-group">
-    <div
-      class="container-item-group"
-      v-for="(item, index) in groupList"
-      :key="index"
-    >
-      <div
-        class="container-subitem-group"
-        @click="onSelectGroup(item.productGroupId)"
-      >
+    <div class="container-item-group" v-for="(item, index) in groupList" :key="index">
+      <div class="container-subitem-group" @click="onSelectGroup(item.productGroupId)">
         <div class="icon-img">
-          <img
-            :src="`data:image/png;base64,${item.productGroupImage}`"
-            alt=""
-          />
+          <img :src="`data:image/png;base64,${item.productGroupImage}`" alt="" />
         </div>
         <span>{{ item.productGroupName }}</span>
       </div>
@@ -26,6 +16,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
   .container-item-group {
     gap: 12px;
 
@@ -41,7 +32,17 @@
         width: 100px;
         height: 100px;
         overflow: hidden;
-        
+
+        @media only screen and (max-width: 1366px) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @media only screen and (max-width: 1300px) {
+          width: 50px;
+          height: 50px;
+        }
+
         border-radius: 50%;
         padding: 10px;
         align-content: center;
@@ -51,12 +52,22 @@
         &:hover {
           background-color: var(--vt-c-primary);
         }
+
         img {
           width: 80px;
           height: 80px;
           margin-bottom: 12px;
-          // border-radius: 50%;
-          
+
+          @media only screen and (max-width: 1900px) {
+            width: 60px;
+            height: 60px;
+          }
+
+          @media only screen and (max-width: 1300px) {
+            width: 30px;
+            height: 30px;
+          }
+
         }
       }
 
@@ -66,6 +77,10 @@
         text-align: center;
         font-family: 'Kanit-Medium';
         width: 120px;
+
+        @media only screen and (max-width: 1300px) {
+          font-size: 16px;
+        }
       }
     }
   }

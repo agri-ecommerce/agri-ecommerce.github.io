@@ -18,7 +18,7 @@
   .content {
     width: 100%;
     display: grid;
-    grid-template-columns: 16vw 1fr;
+    grid-template-columns: 1fr 1fr;
 
 
     .list-item {

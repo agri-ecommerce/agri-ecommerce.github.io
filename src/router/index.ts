@@ -38,6 +38,18 @@ const routes: Array<RouteRecordRaw> = [
     name: path.payment.name,
     component: () => import( /* webpackChunkName: "payment" */ "@/views/Payment/index.vue"),
     meta: { requiresCustomer: false },
+  },
+  {
+    path: path.branch.path,
+    name: path.branch.name,
+    component: () => import( /* webpackChunkName: "branch" */ "@/views/Branch/index.vue"),
+    meta: { requiresCustomer: false },
+  },
+  {
+    path: path.forRent.path,
+    name: path.forRent.name,
+    component: () => import( /* webpackChunkName: "forRent" */ "@/views/ForRent/index.vue"),
+    meta: { requiresCustomer: false },
   }
 ];
 const router = createRouter({

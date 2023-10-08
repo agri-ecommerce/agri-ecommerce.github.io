@@ -22,7 +22,7 @@
     font-size: 32px;
     margin: 4px 0px 8px 0px;
 
-    @media only screen and (max-width: 1366px) {
+    @media only screen and (max-width: 1900px) {
       font-size: 24px;
     }
 
@@ -45,7 +45,7 @@
       color: var(--vt-c-secondary);
 
 
-      @media only screen and (max-width: 1400px) {
+      @media only screen and (max-width: 1900px) {
         font-size: 18px;
       }
 

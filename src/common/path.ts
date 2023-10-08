@@ -23,4 +23,12 @@ export const path = {
     path: "/payment",
     name: "payment",
   },
+  branch: {
+    path: "/branch",
+    name: "branch",
+  },
+  forRent: {
+    path: "/forRent",
+    name: "forRent",
+  }
 };

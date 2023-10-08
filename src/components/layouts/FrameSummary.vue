@@ -41,6 +41,9 @@ p {
       font-family: 'Kanit-Medium';
       font-size: 34px;
       color: var(--vt-c-secondary);
+      @media only screen and (max-width: 1900px) {
+          font-size: 28px;
+        }
     }
   }
 

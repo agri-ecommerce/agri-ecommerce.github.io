@@ -1,20 +1,19 @@
 <template>
   <div class="container-menu">
     <div class="menu-list">
-      <div @click="goto(path.productList.name)">หน้าหลัก</div>
+      <div @click="goto(path.groupList.name)">หน้าหลัก</div>
       <div @mouseover="isMenu = 'สินค้าของเรา'">
         สินค้าของเรา
-        <IconArrowDown :size="iconSize"/>
+        <IconArrowDown :size="iconSize" />
         <div class="menu-sub" v-if="isMenu === 'สินค้าของเรา'" @mouseleave="onExpand('สินค้าของเรา')">
           <span v-for="(item, index) in bannerList?.bannerList" :key="index">
             {{ item.bannerName }}
           </span>
         </div>
       </div>
-      <div @click="goto(path.productList.name)">ให้เช่า</div>
-      <div @click="goto(path.productList.name)">สาขา</div>
-      <div @click="goto(path.productList.name)">เกี่ยวกับเรา</div>
-      <div @click="goto(path.productList.name)">ติดต่อเรา</div>
+      <div @click="goto(path.forRent.name)">ให้เช่า</div>
+      <div @click="goto(path.branch.name)">สาขา</div>
+      <div @click="gotoAbout('.container-about')">ติดต่อเรา</div>
       <div @click="toggleModal">ลงทะเบียน</div>
     </div>
   </div>
@@ -36,13 +35,14 @@
       cursor: pointer;
       color: var(--vt-c-white);
 
-      @media only screen and (max-width: 1366px) {
+      @media only screen and (max-width: 1900px) {
         margin-left: 32px;
         font-size: 14px;
       }
-      @media only screen and (max-width: 1024px) {
+
+      @media only screen and (max-width: 1300px) {
         margin-left: 12px;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 
@@ -123,6 +123,15 @@ export default defineComponent({
         this.iconSize = "8";
       } else if (resolution < 1300) {
         this.iconSize = "4";
+      }
+    },
+    gotoAbout(scroll: string) {
+      const aboutSection = document.querySelector(scroll) as HTMLElement;
+      if (aboutSection) {
+        window.scrollTo({
+          top: aboutSection.offsetTop,
+          behavior: 'smooth'
+        });
       }
     }
   },

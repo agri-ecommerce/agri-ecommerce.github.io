@@ -62,11 +62,19 @@
       width: 140px;
       margin-left: 26px;
       height: 80px;
+      @media only screen and (max-width: 1900px) {
+        width: 100px;
+        margin-left: 20px;
+        height: 60px;
+      }
     }
 
     .name {
       font-size: 20px;
       font-family: "Kanit-Light";
+      @media only screen and (max-width: 1900px) {
+        font-size: 16px;
+      }
 
       p {
         margin: 0;
@@ -87,6 +95,10 @@
         color: var(--vt-c-primary);
         font-size: 40px;
         font-family: "Kanit-Medium";
+        @media only screen and (max-width: 1900px) {
+          font-size: 28px;
+          margin-right: 8px;
+        }
       }
 
       span {
@@ -108,6 +120,10 @@
         color: var(--vt-c-primary);
         font-size: 40px;
         font-family: "Kanit-Medium";
+        @media only screen and (max-width: 1900px) {
+          font-size: 28px;
+          margin-right: 8px;
+        }
       }
 
       span {
@@ -133,6 +149,9 @@
       font-size: 40px;
       font-family: 'Kanit-Medium';
       margin: 0px;
+      @media only screen and (max-width: 1900px) {
+        font-size: 32px;
+      }
     }
 
     .item-form {
@@ -147,6 +166,9 @@
         margin-left: 24px;
         font-family: 'Kanit-Medium';
         color: var(--vt-c-secondary);
+        @media only screen and (max-width: 1900px) {
+          font-size: 22px;
+        }
       }
 
       .span {
@@ -154,6 +176,9 @@
         font-family: 'Kanit-Medium';
         color: var(--vt-c-primary);
         margin-right: 24px;
+        @media only screen and (max-width: 1900px) {
+          font-size: 22px;
+        }
       }
     }
 
@@ -171,6 +196,9 @@
         border: none;
         background-color: var(--vt-c-secondary);
         cursor: pointer;
+        @media only screen and (max-width: 1900px) {
+          font-size: 22px;
+        }
       }
       
     }
@@ -189,6 +217,9 @@
         color: var(--vt-c-secondary);
         text-decoration: underline;
         cursor: pointer;
+        @media only screen and (max-width: 1900px) {
+          font-size: 22px;
+        }
       }
     }
   }

@@ -27,39 +27,39 @@
 }
 
 .slider {
-  // margin: 0 auto;
+  margin: 0 auto;
   padding: 0;
-  width: 1400px;
-  height: 380px;
+  width: 1440px;
+  height: 360px;
   position: relative;
   overflow: hidden;
 
   @media only screen and (max-width: 1900px) {
-    width: 1050px;
-    height: 300px;
+    width: 1000px;
+    height: 250px;
   }
 
   @media only screen and (max-width: 1300px) {
-    width: 760px;
-    height: 200px;
+    width: 720px;
+    height: 180px;
   }
 
   ul.slides {
     width: 100%;
-    height: 380px;
+    height: 360px;
     margin: 0;
     padding: 0;
     display: table;
     position: absolute;
     top: 0;
-    transition: left 1400ms;
+    transition: left 1440ms;
 
     @media only screen and (max-width: 1900px) {
-      height: 300px;
+      height: 250px;
     }
 
     @media only screen and (max-width: 1300px) {
-      height: 760;
+      height: 180;
     }
 
     li {
@@ -67,14 +67,14 @@
       display: table-cell;
 
       img {
-        width: 1400px;
+        width: 1440px;
 
         @media only screen and (max-width: 1900px) {
-          width: 1050px;
+          width: 1000px;
         }
 
         @media only screen and (max-width: 1300px) {
-          width: 760;
+          width: 720;
         }
       }
     }
@@ -162,7 +162,7 @@
 </style>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, nextTick } from "vue";
 export default defineComponent({
   name: "Banner",
   data() {
@@ -205,14 +205,18 @@ export default defineComponent({
         }
       ] as any,
       current: 0 as any,
-      width: 1400 as any,
+      width: 1440 as any,
       timer: 0 as any,
     };
   },
   created: function () {
     this.play();
     this.onResolution();
+    window.addEventListener('resize', this.onResolution);
   },
+  destroyed() {
+        window.removeEventListener('resize', this.onResolution);
+    },
   methods: {
     nextSlide: function () {
       this.current++;
@@ -243,9 +247,10 @@ export default defineComponent({
     onResolution() {
       let resolution = window.innerWidth;
       if (resolution < 1900) {
-        this.width = 1050;
-      } else if (resolution < 1300) {
-        this.width = 760;
+        this.width = 1000;
+      } 
+      else if (resolution < 1300) {
+        this.width = 720;
       }
     }
   },

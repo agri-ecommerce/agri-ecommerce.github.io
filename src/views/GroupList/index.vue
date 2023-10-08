@@ -15,12 +15,12 @@
     font-family: 'Kanit-Medium';
     color: var(--vt-c-secondary);
 
-    @media only screen and (max-width: 1366px) {
+    @media only screen and (max-width: 1900px) {
       font-size: 24px;
     }
 
-    @media only screen and (max-width: 1024px) {
-      font-size: 18px;
+    @media only screen and (max-width: 1300px) {
+      font-size: 20px;
     }
   }
 
@@ -32,7 +32,7 @@
     grid-template-columns: auto auto auto auto auto;
     justify-items: center;
 
-    @media only screen and (max-width: 1360px) {
+    @media only screen and (max-width: 1900px) {
       grid-template-columns: auto auto auto auto;
     }
   }

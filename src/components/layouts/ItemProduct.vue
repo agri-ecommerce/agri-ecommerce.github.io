@@ -39,9 +39,13 @@
   box-shadow: 0px 10px 16px var(--vt-c-black-opa);
   flex-direction: column;
 
-  @media only screen and (max-width: 1366px) {
+  @media only screen and (max-width: 1900px) {
     width: 14vw;
     height: 260px;
+  }
+  @media only screen and (max-width: 1300px) {
+    width: 13.5vw;
+    height: 240px;
   }
 
   p {
@@ -56,8 +60,11 @@
     img {
       height: 140px;
 
-      @media only screen and (max-width: 1366px) {
+      @media only screen and (max-width: 1900px) {
         height: 80px;
+      }
+      @media only screen and (max-width: 1300px) {
+        height: 70px;
       }
     }
   }
@@ -70,7 +77,7 @@
       font-size: 12px;
       font-family: 'Kanit-Light';
       display: -webkit-box;
-      max-width: 100%;
+      // max-width: 100%;
       min-height: 40px;
       margin: 0 auto;
       -webkit-line-clamp: 2;
@@ -79,6 +86,11 @@
       /* autoprefixer: on */
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media only screen and (max-width: 1300px) {
+        font-size: 10px;
+        min-height: 20px;
+      }
 
     }
   }
@@ -96,8 +108,11 @@
       margin-right: 8px;
       color: var(--vt-c-primary);
 
-      @media only screen and (max-width: 1366px) {
+      @media only screen and (max-width: 1900px) {
         font-size: 18px;
+      }
+      @media only screen and (max-width: 1300px) {
+        font-size: 16px;
       }
     }
   }
@@ -140,9 +155,13 @@
         padding-left: 16px;
         font-family: 'Kanit-Regular';
 
-        @media only screen and (max-width: 1366px) {
+        @media only screen and (max-width: 1900px) {
           height: 28px;
           font-size: 18px;
+        }
+        @media only screen and (max-width: 1300px) {
+          height: 22px;
+          font-size: 16px;
         }
       }
 
@@ -161,9 +180,15 @@
         width: 32px;
         border-radius: 12px;
 
-        @media only screen and (max-width: 1366px) {
+        @media only screen and (max-width: 1900px) {
           height: 28px;
           font-size: 12px;
+          border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 1300px) {
+          height: 24px;
+          font-size: 10px;
           border-radius: 10px;
         }
       }
@@ -185,9 +210,13 @@
       font-size: 14px;
       font-family: 'Kanit-Regular';
 
-      @media only screen and (max-width: 1366px) {
+      @media only screen and (max-width: 1900px) {
         height: 28px;
         font-size: 12px;
+      }
+      @media only screen and (max-width: 1300px) {
+        height: 24px;
+        font-size: 10px;
       }
 
       &:hover {
