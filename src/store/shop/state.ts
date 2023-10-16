@@ -3,7 +3,7 @@ export interface State {
     userId: string;
     email: string;
     displayName: string;
-    isFilter: number;
+    isFilter: string;
   }
   
 export const initialState: State = {
@@ -11,6 +11,6 @@ export const initialState: State = {
     userId: '',
     email: '',
     displayName: '',
-    isFilter: 0,
+    isFilter: '00',
   };
   

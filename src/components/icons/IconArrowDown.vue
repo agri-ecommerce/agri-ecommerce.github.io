@@ -25,7 +25,7 @@ export default defineComponent({
     props: {
         color: {
             type: String,
-            default: '#ffffff',
+            default: '#181818',
         },
         size: {
             type: String,

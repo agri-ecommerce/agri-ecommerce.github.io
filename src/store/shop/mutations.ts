@@ -15,7 +15,7 @@ const mutations = {
     state.userId = '';
     state.email = '';
     state.displayName = '';
-    state.isFilter = 0;
+    state.isFilter = '';
   },
 };
 

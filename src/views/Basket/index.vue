@@ -53,28 +53,28 @@
     margin: 0;
     display: grid;
     gap: 16px;
-    grid-template-columns: 1fr 35% 1fr 1fr auto;
+    grid-template-columns: auto 35% auto 1fr auto;
     padding: 16px 0;
     border-bottom: 1px solid var(--vt-c-black-opa);
 
 
     img {
-      width: 140px;
-      margin-left: 26px;
-      height: 80px;
-      @media only screen and (max-width: 1900px) {
-        width: 100px;
-        margin-left: 20px;
-        height: 60px;
-      }
+      width: var(--140px);
+      margin-left: var(--20px);
+      height: var(--80px);
+      // @media only screen and (max-width: 1900px) {
+      //   width: 100px;
+      //   margin-left: var(--20px);
+      //   height: 60px;
+      // }
     }
 
     .name {
-      font-size: 20px;
+      font-size: var(--20px);
       font-family: "Kanit-Light";
-      @media only screen and (max-width: 1900px) {
-        font-size: 16px;
-      }
+      // @media only screen and (max-width: 1900px) {
+      //   font-size: 16px;
+      // }
 
       p {
         margin: 0;
@@ -86,23 +86,20 @@
       display: flex;
       flex-direction: row;
       align-content: center;
-      gap: 6px;
+      gap: var(--6px);
       justify-content: flex-start;
       align-items: center;
 
       p {
         margin: 0;
         color: var(--vt-c-primary);
-        font-size: 40px;
+        font-size: var(--28px);
         font-family: "Kanit-Medium";
-        @media only screen and (max-width: 1900px) {
-          font-size: 28px;
-          margin-right: 8px;
-        }
+        margin-right: var(--4px);
       }
 
       span {
-        margin-top: 16px;
+        margin-top: var(--14px);
       }
     }
 
@@ -111,23 +108,20 @@
       flex-direction: row;
       align-content: center;
       align-items: center;
-      gap: 6px;
+      gap: var(--6px);
       justify-content: flex-end;
-      margin-right: 10px;
+      margin-right: var(--10px);
 
       p {
         margin: 0;
         color: var(--vt-c-primary);
-        font-size: 40px;
+        font-size: var(--28px);
         font-family: "Kanit-Medium";
-        @media only screen and (max-width: 1900px) {
-          font-size: 28px;
-          margin-right: 8px;
-        }
+        margin-right: var(--8px);
       }
 
       span {
-        margin-top: 16px;
+        margin-top: var(--16px);
       }
     }
 
@@ -136,8 +130,9 @@
       flex-direction: row;
       align-content: center;
       align-items: center;
-      margin-right: 26px;
-      margin-left: 26px;
+      justify-content: flex-end;
+      margin-right: var(--8px);
+      // margin-left: var(--20px);
     }
   }
 
@@ -146,12 +141,12 @@
     flex-direction: column;
 
     h1 {
-      font-size: 40px;
+      font-size: var(--32px);
       font-family: 'Kanit-Medium';
       margin: 0px;
-      @media only screen and (max-width: 1900px) {
-        font-size: 32px;
-      }
+      // @media only screen and (max-width: 1900px) {
+      //   font-size: var(--32px);
+      // }
     }
 
     .item-form {
@@ -161,24 +156,24 @@
       align-items: center;
 
       .p {
-        font-size: 24px;
-        margin-top: 12px;
-        margin-left: 24px;
+        font-size: var(-24px);
+        margin-top: var(--12px);
+        margin-left: var(--24px);
         font-family: 'Kanit-Medium';
         color: var(--vt-c-secondary);
-        @media only screen and (max-width: 1900px) {
-          font-size: 22px;
-        }
+        // @media only screen and (max-width: 1900px) {
+        //   font-size: 22px;
+        // }
       }
 
       .span {
-        font-size: 24px;
+        font-size: var(--24px);
         font-family: 'Kanit-Medium';
         color: var(--vt-c-primary);
-        margin-right: 24px;
-        @media only screen and (max-width: 1900px) {
-          font-size: 22px;
-        }
+        margin-right: var(--24px);
+        // @media only screen and (max-width: 1900px) {
+        //   font-size: 22px;
+        // }
       }
     }
 
@@ -186,19 +181,19 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 32px;
+      margin-top: var(--32px);
       button {
-        font-size: 24px;
+        font-size: var(--24px);
         color: var(--vt-c-white);
-        border-radius: 16px;
+        border-radius: var(--16px);
         width: 50%;
-        padding: 8px 0px;
+        padding: var(--8px) 0px;
         border: none;
         background-color: var(--vt-c-secondary);
         cursor: pointer;
-        @media only screen and (max-width: 1900px) {
-          font-size: 22px;
-        }
+        // @media only screen and (max-width: 1900px) {
+        //   font-size: 22px;
+        // }
       }
       
     }
@@ -206,20 +201,20 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 24px;
-      margin-bottom: 16px;
+      margin-top: var(--24px);
+      margin-bottom: var(--16px);
 
       button {
         background-color: unset;
         font-family: 'Kanit-Medium';
         border: none;
-        font-size: 24px;
+        font-size: var(--24px);
         color: var(--vt-c-secondary);
         text-decoration: underline;
         cursor: pointer;
-        @media only screen and (max-width: 1900px) {
-          font-size: 22px;
-        }
+        // @media only screen and (max-width: 1900px) {
+        //   font-size: 22px;
+        // }
       }
     }
   }

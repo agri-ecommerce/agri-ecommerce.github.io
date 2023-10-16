@@ -11,8 +11,20 @@ export default {
     return false;
   },
   async getMasterGroup() {
-    // const resp: any = await api.get('/getMasterCategoryGroup');
-    const resp: any = mock.getGroup;
+    const resp: any = await api.get('/getMasterProductGroup');
+    
+    // if(!resp) {
+      // const resp: any = mock.getGroup;
+    // }
+    
+    if (resp) {
+      return resp;
+    }
+    return false;
+  },
+  async getRent() {
+    // const resp: any = await api.get('/getRent');
+    const resp: any = mock.getRent;
     if (resp) {
       return resp;
     }

@@ -50,6 +50,12 @@ const routes: Array<RouteRecordRaw> = [
     name: path.forRent.name,
     component: () => import( /* webpackChunkName: "forRent" */ "@/views/ForRent/index.vue"),
     meta: { requiresCustomer: false },
+  },
+  {
+    path: path.work.path,
+    name: path.work.name,
+    component: () => import( /* webpackChunkName: "forRent" */ "@/views/Work/index.vue"),
+    meta: { requiresCustomer: false },
   }
 ];
 const router = createRouter({

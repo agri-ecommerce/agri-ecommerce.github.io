@@ -30,5 +30,9 @@ export const path = {
   forRent: {
     path: "/forRent",
     name: "forRent",
+  },
+  work: {
+    path: "/work",
+    name: "work",
   }
 };

@@ -4,7 +4,7 @@ import store from '../store';
 const axiosSource = axios.CancelToken.source();
 
 export const service = axios.create({
-    baseURL: environment.hodWebBaseApi,
+    baseURL: environment.baseApi,
     headers: {
       'Content-Type': 'application/json',
       'Cache-Control': 'no-cache',
@@ -16,8 +16,8 @@ export const service = axios.create({
   const handleRequest = async (config: any) => {
     // const accessToken = await AuthService.getAccessToken();
     // const userId = await AuthService.getUserId();
-    const accessToken = '';
-    config.headers['access_token'] = accessToken;
+    // const accessToken = '';
+    // config.headers['access_token'] = accessToken;
 
     return Promise.resolve(config);
   };

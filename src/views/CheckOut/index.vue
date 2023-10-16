@@ -6,7 +6,7 @@
           <p>ที่อยู่จัดส่ง</p>
           <div class="item-address">
             <span>7 ซอย ลาดพร้าว 34 แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพมหานคร 10310</span>
-            <span>แก้ไข</span>
+            <span class="edit-address" @click="toggleModal">แก้ไข</span>
           </div>
         </div>
         <div class="product-list">
@@ -38,7 +38,7 @@
             <span class="span">5,650.00</span>
           </div>
           <div class="comfirm">
-            <button>สั่งซื้อ</button>
+            <button @click="onPayment">สั่งซื้อ</button>
           </div>
           <div class="shop-continue">
             <button @click="onBasket">กลับไปหน้าตะกร้า</button>
@@ -46,7 +46,9 @@
         </div>
       </template>
     </FrameSummary>
+    <AddressModal :showModal="openModal" @close="toggleModal"></AddressModal>
   </div>
+  
 </template>
 
 <style scoped lang="scss">
@@ -66,6 +68,12 @@
       span {
         margin-left: 24px;
       }
+    }
+
+    .edit-address {
+      cursor: pointer;
+      color: var(--vt-c-primary);
+      text-decoration: underline;
     }
 
   }
@@ -182,15 +190,18 @@
 import { defineComponent } from "vue";
 import { path } from "@/common/path";
 import FrameSummary from "@/components/layouts/FrameSummary.vue";
+import AddressModal from "@/components/modals/AddressModal.vue";
 export default defineComponent({
   name: "CheckOut",
   data() {
     return {
       paths: path as any,
+      openModal: false as boolean
     };
   },
   components: {
-    FrameSummary
+    FrameSummary,
+    AddressModal
   },
   created() {
     this.initData();
@@ -200,7 +211,13 @@ export default defineComponent({
     },
     onBasket() {
       this.$router.push({ name: this.paths.basket.name })
-    }
+    },
+    onPayment() {
+      this.$router.push({ name: this.paths.payment.name })
+    },
+    toggleModal() {
+      this.openModal = !this.openModal;
+    },
   },
 });
 </script>

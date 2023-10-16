@@ -1,6 +1,6 @@
 <template>
   <div class="container-main" v-if="resWidth > 1020">
-    <TopBanner></TopBanner>
+    <TopBanner v-if="isTop"></TopBanner>
     <Header></Header>
     <div class="container-app">
       <RouterView />
@@ -20,17 +20,17 @@
   width: 100%;
 
   .container-app {
-    max-width: 1920px;
+    max-width: 1366px;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 2rem;
     background-color: #fffdf9;
-    @media only screen and (max-width: 1900px) {
-      max-width: 1366px;
-    }
-    @media only screen and (max-width: 1300px) {
-      max-width: 1024px;
-      padding: 0 20px;
-    }
+    // @media only screen and (max-width: 1900px) {
+    //   max-width: 1366px;
+    // }
+    // @media only screen and (max-width: 1300px) {
+    //   max-width: 1024px;
+    //   padding: 0 20px;
+    // }
   }
 }
 
@@ -60,12 +60,24 @@ import { defineComponent } from "vue";
 import Header from "@/components/layouts/Header.vue";
 import About from "@/components/layouts/About.vue";
 import TopBanner from "@/components/layouts/TopBanner.vue";
+import { path } from "@/common/path";
 export default defineComponent({
   name: "App",
   data() {
     return {
-      resWidth: 0 as number
+      resWidth: 0 as number,
+      isTop: 1 as number,
+      paths: path as any
     };
+  },
+  watch:{
+    $route() {
+      if(this.$route.name === this.paths.groupList.name) {
+        this.isTop = 1;
+      } else {
+        this.isTop = 0;
+      }
+    },
   },
   components: {
     Header,
@@ -83,3 +95,4 @@ export default defineComponent({
   },
 });
 </script>
+ 

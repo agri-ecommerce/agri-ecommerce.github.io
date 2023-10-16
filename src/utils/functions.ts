@@ -16,3 +16,13 @@ export const useInputNumber = (num: string) => {
         return num.toString().replace(regexNumber, '');
     }
 };
+
+export const useGotoClass = (scroll: string) => {
+    const aboutSection = document.querySelector(scroll) as HTMLElement;
+    if (aboutSection) {
+        window.scrollTo({
+            top: aboutSection.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+};

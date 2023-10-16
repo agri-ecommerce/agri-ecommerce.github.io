@@ -29,14 +29,9 @@
       .icon-img {
         display: flex;
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         overflow: hidden;
-
-        @media only screen and (max-width: 1366px) {
-          width: 80px;
-          height: 80px;
-        }
 
         @media only screen and (max-width: 1300px) {
           width: 50px;
@@ -54,14 +49,9 @@
         }
 
         img {
-          width: 80px;
-          height: 80px;
+          width: 50px;
+          height: 50px;
           margin-bottom: 12px;
-
-          @media only screen and (max-width: 1900px) {
-            width: 60px;
-            height: 60px;
-          }
 
           @media only screen and (max-width: 1300px) {
             width: 30px;
@@ -73,7 +63,7 @@
 
       span {
         color: var(--vt-c-secondary);
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         font-family: 'Kanit-Medium';
         width: 120px;

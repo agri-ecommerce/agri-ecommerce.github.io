@@ -29,24 +29,19 @@
 .slider {
   margin: 0 auto;
   padding: 0;
-  width: 1440px;
-  height: 360px;
+  width: 1000px;
+  height: 250px;
   position: relative;
   overflow: hidden;
 
-  @media only screen and (max-width: 1900px) {
-    width: 1000px;
-    height: 250px;
-  }
-
-  @media only screen and (max-width: 1300px) {
-    width: 720px;
-    height: 180px;
-  }
+  // @media only screen and (max-width: 1300px) {
+  //   width: 720px;
+  //   height: 180px;
+  // }
 
   ul.slides {
     width: 100%;
-    height: 360px;
+    height: 250px;
     margin: 0;
     padding: 0;
     display: table;
@@ -54,28 +49,21 @@
     top: 0;
     transition: left 1440ms;
 
-    @media only screen and (max-width: 1900px) {
-      height: 250px;
-    }
 
-    @media only screen and (max-width: 1300px) {
-      height: 180;
-    }
+    // @media only screen and (max-width: 1300px) {
+    //   height: 180;
+    // }
 
     li {
       list-style-type: none;
       display: table-cell;
 
       img {
-        width: 1440px;
+        width: 1000px;
 
-        @media only screen and (max-width: 1900px) {
-          width: 1000px;
-        }
-
-        @media only screen and (max-width: 1300px) {
-          width: 720;
-        }
+        // @media only screen and (max-width: 1300px) {
+        //   width: 720;
+        // }
       }
     }
   }
@@ -132,20 +120,15 @@
 
   .tab {
     width: 100%;
-    height: 70px;
+    height: 50px;
     display: flex;
     justify-content: center;
-    font-size: 28px;
+    font-size: 18px;
     font-family: "Kanit-Medium";
     align-items: center;
     border-right: 1px solid var(--vt-c-black-opa);
     border-left: 1px solid var(--vt-c-black-opa);
     cursor: pointer;
-
-    @media only screen and (max-width: 1900px) {
-      font-size: 18px;
-      height: 50px;
-    }
 
     @media only screen and (max-width: 1300px) {
       font-size: 14px;
@@ -205,18 +188,18 @@ export default defineComponent({
         }
       ] as any,
       current: 0 as any,
-      width: 1440 as any,
+      width: 1000 as any,
       timer: 0 as any,
     };
   },
   created: function () {
     this.play();
-    this.onResolution();
-    window.addEventListener('resize', this.onResolution);
+    // this.onResolution();
+    // window.addEventListener('resize', this.onResolution);
   },
-  destroyed() {
-        window.removeEventListener('resize', this.onResolution);
-    },
+  // destroyed() {
+  //       window.removeEventListener('resize', this.onResolution);
+  //   },
   methods: {
     nextSlide: function () {
       this.current++;
@@ -244,15 +227,15 @@ export default defineComponent({
         app.nextSlide();
       }, 5000);
     },
-    onResolution() {
-      let resolution = window.innerWidth;
-      if (resolution < 1900) {
-        this.width = 1000;
-      } 
-      else if (resolution < 1300) {
-        this.width = 720;
-      }
-    }
+    // onResolution() {
+    //   let resolution = window.innerWidth;
+
+    //   if (resolution < 1300) {
+    //     this.width = 720;
+    //   } else {
+    //     this.width = 1000;
+    //   }
+    // }
   },
 });
 </script>

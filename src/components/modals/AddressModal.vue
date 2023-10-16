@@ -5,19 +5,23 @@
         <div class="modal-inner" v-show="showModal">
           <div class="icon-close" @click="$emit('close')">x</div>
           <div class="modal-content">
-            <h1 class="modal-title">ลงทะเบียน</h1>
+            <h1 class="modal-title">ที่อยู่จัดส่ง</h1>
             <div class="content-container">
               <div class="input-label">
-                <label for="">เบอร์โทรศัพท์</label>
-                <input type="text" placeholder="เบอร์โทรศัพท์" />
+                <label for="">บ้านเลขที่, ซอย, หมู่, ถนน</label>
+                <input type="text" placeholder="บ้านเลขที่, ซอย, หมู่, ถนน" />
               </div>
               <div class="input-label">
-                <label for="">รหัสผ่าน</label>
-                <input type="text" placeholder="รหัสผ่าน" />
+                <label for="">ตำบล/แขวง</label>
+                <input type="text" placeholder="ตำบล/แขวง" />
               </div>
               <div class="input-label">
-                <label for="">ชื่อผู้ใช้งาน</label>
-                <input type="text" placeholder="ชื่อผู้ใช้งาน" />
+                <label for="">อำเภอ/เขต</label>
+                <input type="text" placeholder="อำเภอ/เขต" />
+              </div>
+              <div class="input-label">
+                <label for="">จังหวัด</label>
+                <input type="text" placeholder="จังหวัด" />
               </div>
             </div>
           </div>
@@ -34,16 +38,16 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "RegisterModal",
+  name: "AddressModal",
   props: ["showModal"],
   data() {
     return {};
   },
   methods: {
-    
+
   },
   created: function () {
-    
+
   },
 });
 </script>

@@ -32,17 +32,13 @@
 <style scoped lang="scss">
 .container-item-product {
   display: flex;
-  width: 270px;
-  height: 350px;
+  width: auto;
+  height: 260px;
   border-radius: 16px;
   background-color: var(--vt-c-white);
   box-shadow: 0px 10px 16px var(--vt-c-black-opa);
   flex-direction: column;
 
-  @media only screen and (max-width: 1900px) {
-    width: 14vw;
-    height: 260px;
-  }
   @media only screen and (max-width: 1300px) {
     width: 13.5vw;
     height: 240px;
@@ -58,11 +54,8 @@
     justify-content: center;
 
     img {
-      height: 140px;
+      height: 80px;
 
-      @media only screen and (max-width: 1900px) {
-        height: 80px;
-      }
       @media only screen and (max-width: 1300px) {
         height: 70px;
       }
@@ -103,14 +96,11 @@
     justify-content: flex-end;
 
     p {
-      font-size: 22px;
+      font-size: 18px;
       font-family: 'Kanit-Medium';
       margin-right: 8px;
       color: var(--vt-c-primary);
 
-      @media only screen and (max-width: 1900px) {
-        font-size: 18px;
-      }
       @media only screen and (max-width: 1300px) {
         font-size: 16px;
       }
@@ -142,10 +132,10 @@
       }
 
       .input-qty {
-        height: 32px;
+        height: 28px;
         width: 100%;
         border-radius: 12px;
-        font-size: 20px;
+        font-size: 18px;
         border: 1px solid #adadad;
         background-color: #ffffff;
         color: var(--vt-c-secondary);
@@ -155,10 +145,6 @@
         padding-left: 16px;
         font-family: 'Kanit-Regular';
 
-        @media only screen and (max-width: 1900px) {
-          height: 28px;
-          font-size: 18px;
-        }
         @media only screen and (max-width: 1300px) {
           height: 22px;
           font-size: 16px;
@@ -171,20 +157,14 @@
         justify-content: center;
         text-align: center;
         padding: 2px;
-        font-size: 14px;
+        font-size: 12px;
         border: none;
         outline: 0;
         cursor: pointer;
         font-family: 'ThaiBevSansNew-Regular';
-        height: 32px;
+        height: 28px;
         width: 32px;
-        border-radius: 12px;
-
-        @media only screen and (max-width: 1900px) {
-          height: 28px;
-          font-size: 12px;
-          border-radius: 10px;
-        }
+        border-radius: 10px;
 
         @media only screen and (max-width: 1300px) {
           height: 24px;
@@ -206,14 +186,10 @@
       width: 100%;
       background-color: var(--vt-c-secondary);
       color: var(--vt-c-white);
-      height: 32px;
-      font-size: 14px;
+      height: 28px;
+      font-size: 12px;
       font-family: 'Kanit-Regular';
 
-      @media only screen and (max-width: 1900px) {
-        height: 28px;
-        font-size: 12px;
-      }
       @media only screen and (max-width: 1300px) {
         height: 24px;
         font-size: 10px;
@@ -282,7 +258,6 @@ export default defineComponent({
       this.calculate('', obj);
     },
     onSubmit(data: any) {
-      console.log("data", data);
       this.data.productQty = 0;
     }
   },

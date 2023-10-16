@@ -2,54 +2,210 @@
     "getMasterCategoryGroup": {
         "data": [
             {
-                "categoryGroupId": 0,
+                "categoryGroupId": "01",
                 "categoryGroupName": "หมวดเคมี",
                 "categoryGroupAmount": 2414,
                 "categoryGroupItems": [
                     {
-                        "categoryGroupItemId": 1,
+                        "categoryGroupItemId": "01",
                         "categoryGroupItemName": "ยา",
                         "categoryGroupItemAmount": 380,
-                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
+                        "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg",
+                        "groupSubItems": [
+                            {
+                                "categoryGroupSubItemId": "01",
+                                "categoryGroupSubItemName": "เอสทีม",
+                                "categoryGroupSubItemAmount": 30,
+                                "groupSubSubItems": [
+                                    {
+                                        "categoryGroupSubSubItemId": "0101",
+                                        "categoryGroupSubSubItemName": "เอสทีม ยาฆ่าแมลง",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    },
+                                    {
+                                        "categoryGroupSubSubItemId": "0102",
+                                        "categoryGroupSubSubItemName": "เอสทีม ยาป้องกันโรคพืช",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    },
+                                    {
+                                        "categoryGroupSubSubItemId": "0103",
+                                        "categoryGroupSubSubItemName": "เอสทีม กำจัดวัชพืช",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    },
+                                    {
+                                        "categoryGroupSubSubItemId": "0104",
+                                        "categoryGroupSubSubItemName": "เอสทีม ฮอร์โมน",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    }
+                                ]
+                            },
+                            {
+                                "categoryGroupSubItemId": "02",
+                                "categoryGroupSubItemName": "แอ็กโกร",
+                                "categoryGroupSubItemAmount": 30,
+                                "groupSubSubItems": [
+                                    {
+                                        "categoryGroupSubSubItemId": "0201",
+                                        "categoryGroupSubSubItemName": "แอ็กโกร ยาฆ่าแมลง",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    },
+                                    {
+                                        "categoryGroupSubSubItemId": "0202",
+                                        "categoryGroupSubSubItemName": "เอสทีม กำจัดวัชพืช",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    },
+                                    {
+                                        "categoryGroupSubSubItemId": "0203",
+                                        "categoryGroupSubSubItemName": "แอ็กโกร ฮอร์โมน",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    },
+                                    {
+                                        "categoryGroupSubSubItemId": "0204",
+                                        "categoryGroupSubSubItemName": "แอ็กโกร ฮอร์โมน",
+                                        "categoryGroupSubSubItemAmount": 30
+                                    }
+                                ]
+                            },
+                            {
+                                "categoryGroupSubItemId": "09",
+                                "categoryGroupSubItemName": "เมเจอร์ฟาร์",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "10",
+                                "categoryGroupSubItemName": "สหภัณฑ์",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "11",
+                                "categoryGroupSubItemName": "กุ๊ดเทค",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "12",
+                                "categoryGroupSubItemName": "เอวีอะโกร",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "13",
+                                "categoryGroupSubItemName": "อุครเกษมสินทรัพย์",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "14",
+                                "categoryGroupSubItemName": "คอนแทค",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "15",
+                                "categoryGroupSubItemName": "เพ็นต้าเคมี",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "16",
+                                "categoryGroupSubItemName": "ชาลี เอสพีซี",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "17",
+                                "categoryGroupSubItemName": "กรีนพลาน่า",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "18",
+                                "categoryGroupSubItemName": "ป.ปฐพีทอง",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "19",
+                                "categoryGroupSubItemName": "ร่มฉัตรการเกษตร ฮอร์โมน",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "20",
+                                "categoryGroupSubItemName": "เอเอเอ อกริเทค ฮอร์โมน",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "21",
+                                "categoryGroupSubItemName": "หมาแดง",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "22",
+                                "categoryGroupSubItemName": "ไบเออร์ไทยจำกัด",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "23",
+                                "categoryGroupSubItemName": "ซินแจนทรา",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "24",
+                                "categoryGroupSubItemName": "โซตัส",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "50",
+                                "categoryGroupSubItemName": "อื่นๆ ฆ่าแมลง",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "51",
+                                "categoryGroupSubItemName": "อื่นๆ กำจัดโรคพืช",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "52",
+                                "categoryGroupSubItemName": "อื่นๆ กำจัดวีชพืช",
+                                "categoryGroupSubItemAmount": 30
+                            },
+                            {
+                                "categoryGroupSubItemId": "53",
+                                "categoryGroupSubItemName": "อื่นๆ ฮอร์โมน",
+                                "categoryGroupSubItemAmount": 30
+                            }
+                        ]
                     },
                     {
-                        "categoryGroupItemId": 2,
+                        "categoryGroupItemId": "02",
                         "categoryGroupItemName": "เมล็ดพันธุ์",
                         "categoryGroupItemAmount": 468,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 3,
+                        "categoryGroupItemId": "03",
                         "categoryGroupItemName": "อาหารสัตว์",
                         "categoryGroupItemAmount": 130,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 4,
+                        "categoryGroupItemId": "04",
                         "categoryGroupItemName": "ปุ๋ย",
                         "categoryGroupItemAmount": 214,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 5,
+                        "categoryGroupItemId": "05",
                         "categoryGroupItemName": "อุปกรณ์",
                         "categoryGroupItemAmount": 562,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 6,
+                        "categoryGroupItemId": "06",
                         "categoryGroupItemName": "พลาสติก",
                         "categoryGroupItemAmount": 190,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 7,
+                        "categoryGroupItemId": "07",
                         "categoryGroupItemName": "อุปกรณ์",
                         "categoryGroupItemAmount": 412,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 8,
+                        "categoryGroupItemId": "08",
                         "categoryGroupItemName": "ยางพารา",
                         "categoryGroupItemAmount": 58,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
@@ -57,72 +213,72 @@
                 ]
             },
             {
-                "categoryGroupId": 1,
+                "categoryGroupId": "02",
                 "categoryGroupName": "หมวดจักรกล",
                 "categoryGroupAmount": 6281,
                 "categoryGroupItems": [
                     {
-                        "categoryGroupItemId": 10,
+                        "categoryGroupItemId": "10",
                         "categoryGroupItemName": "แฮนด์ทูล",
                         "categoryGroupItemAmount": 1252,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 12,
+                        "categoryGroupItemId": "12",
                         "categoryGroupItemName": "ไฟฟ้า",
                         "categoryGroupItemAmount": 1089,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 13,
+                        "categoryGroupItemId": "13",
                         "categoryGroupItemName": "ท่อ PVC ข้อต่อ",
                         "categoryGroupItemAmount": 394,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 14,
+                        "categoryGroupItemId": "14",
                         "categoryGroupItemName": "อุปกรณ์ระบบน้ำ",
                         "categoryGroupItemAmount": 296,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 15,
+                        "categoryGroupItemId": "15",
                         "categoryGroupItemName": "สปริงเกอร์",
                         "categoryGroupItemAmount": 597,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 18,
+                        "categoryGroupItemId": "18",
                         "categoryGroupItemName": "พาวเวอร์ทูลล์",
                         "categoryGroupItemAmount": 183,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 19,
+                        "categoryGroupItemId": "19",
                         "categoryGroupItemName": "จักรกลPC",
                         "categoryGroupItemAmount": 497,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 20,
+                        "categoryGroupItemId": "20",
                         "categoryGroupItemName": "อะไหล่",
                         "categoryGroupItemAmount": 891,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 21,
+                        "categoryGroupItemId": "21",
                         "categoryGroupItemName": "ดอกสว่าน",
                         "categoryGroupItemAmount": 632,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 22,
+                        "categoryGroupItemId": "22",
                         "categoryGroupItemName": "ใบตัดใบเจียร์",
                         "categoryGroupItemAmount": 202,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 23,
+                        "categoryGroupItemId": "23",
                         "categoryGroupItemName": "สายพาน/โซ่/ลวดชุบ",
                         "categoryGroupItemAmount": 248,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
@@ -130,54 +286,54 @@
                 ]
             },
             {
-                "categoryGroupId": 2,
+                "categoryGroupId": "03",
                 "categoryGroupName": "หมวดก่อสร้าง",
                 "categoryGroupAmount": 2333,
                 "categoryGroupItems": [
                     {
-                        "categoryGroupItemId": 30,
+                        "categoryGroupItemId": "30",
                         "categoryGroupItemName": "ปูน หิน ทราย คอนกรีต อิฐบล็อค",
                         "categoryGroupItemAmount": 149,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 31,
+                        "categoryGroupItemId": "31",
                         "categoryGroupItemName": "เฌอร่า สังกะสี ลวดหนาม ไวร์เมช",
                         "categoryGroupItemAmount": 189,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 32,
+                        "categoryGroupItemId": "32",
                         "categoryGroupItemName": "กระเบื้อง บล็อกแก้ว",
                         "categoryGroupItemAmount": 226,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 40,
+                        "categoryGroupItemId": "40",
                         "categoryGroupItemName": "เหล็ก",
                         "categoryGroupItemAmount": 227,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 41,
+                        "categoryGroupItemId": "41",
                         "categoryGroupItemName": "ประตู PVC",
                         "categoryGroupItemAmount": 343,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 43,
+                        "categoryGroupItemId": "43",
                         "categoryGroupItemName": "สี TOA",
                         "categoryGroupItemAmount": 442,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 45,
+                        "categoryGroupItemId": "45",
                         "categoryGroupItemName": "สุขภัณฑ์",
                         "categoryGroupItemAmount": 634,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 46,
+                        "categoryGroupItemId": "46",
                         "categoryGroupItemName": "ของเหลว",
                         "categoryGroupItemAmount": 123,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
@@ -185,24 +341,24 @@
                 ]
             },
             {
-                "categoryGroupId": 3,
+                "categoryGroupId": "04",
                 "categoryGroupName": "หมวดอื่นๆ",
                 "categoryGroupAmount": 115,
                 "categoryGroupItems": [
                     {
-                        "categoryGroupItemId": 50,
+                        "categoryGroupItemId": "50",
                         "categoryGroupItemName": "อื่นๆ",
                         "categoryGroupItemAmount": 17,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 90,
+                        "categoryGroupItemId": "90",
                         "categoryGroupItemName": "ของแถมซื้อมาแจก",
                         "categoryGroupItemAmount": 64,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
                     },
                     {
-                        "categoryGroupItemId": 96,
+                        "categoryGroupItemId": "96",
                         "categoryGroupItemName": "ให้เช่า",
                         "categoryGroupItemAmount": 34,
                         "categoryGroupItemImage": "https://www.mitrpholmodernfarm.com/public/images/uploads/87d2c0e7_2f24c9f9c72704fa533a10e84a0e0c0c-1250x550.jpg"
@@ -473,5 +629,134 @@
                 "productGroupImage": "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"
             }
         ]
+    },
+    "getPayment": {
+        "data": {
+            "accountNumber": "XXX-X-XXXXX-X",
+            "accountName": "ธนาคารกรุงไทย บริษัท Shopping",
+            "saleOrderNumber": "2023091700001",
+            "totalPrice": 5650,
+            "description": "เมื่อชำระเงินแล้ว รบกวนลูกค้าส่งสลิปหลักฐานการชำระเงินมาที่ไลน์ @line_shopping พร้อมระบุ เลขที่ใบสั่งซื้อ และท่านสามารถติดตามการจัดส่งได้ทาง line ตามช่องทางที่ท่านส่งหลักฐานการชำระเงิน",
+            "contact": {
+                "contactName": "line",
+                "contactPath": "@line_shopping"
+            }
+        }
+    },
+    "getRent": {
+        "data": [
+            {
+                "rentId": 1,
+                "rentName": "บริการประกอบติดตั้ง",
+                "rentDiscription": "vFIX บริการประกอบติดตั้งงานเฟอร์นิเจอร์ ทั้งการติดตั้งเฟอร์นิเจอร์ในบ้าน และการติดตั้งเฟอร์นิเจอร์ในครัว กับทีมช่างมืออาชีพ ที่มีความเชี่ยวชาญและประสบการณ์ในงานช่างมากมาย",
+                "rentImage": ""
+            },
+            {
+                "rentId": 2,
+                "rentName": "บริการประกอบติดตั้ง",
+                "rentDiscription": "vFIX บริการประกอบติดตั้งงานเฟอร์นิเจอร์ ทั้งการติดตั้งเฟอร์นิเจอร์ในบ้าน และการติดตั้งเฟอร์นิเจอร์ในครัว กับทีมช่างมืออาชีพ ที่มีความเชี่ยวชาญและประสบการณ์ในงานช่างมากมาย",
+                "rentImage": ""
+            },
+            {
+                "rentId": 3,
+                "rentName": "บริการประกอบติดตั้ง",
+                "rentDiscription": "vFIX บริการประกอบติดตั้งงานเฟอร์นิเจอร์ ทั้งการติดตั้งเฟอร์นิเจอร์ในบ้าน และการติดตั้งเฟอร์นิเจอร์ในครัว กับทีมช่างมืออาชีพ ที่มีความเชี่ยวชาญและประสบการณ์ในงานช่างมากมาย",
+                "rentImage": ""
+            },
+            {
+                "rentId": 4,
+                "rentName": "บริการประกอบติดตั้ง",
+                "rentDiscription": "vFIX บริการประกอบติดตั้งงานเฟอร์นิเจอร์ ทั้งการติดตั้งเฟอร์นิเจอร์ในบ้าน และการติดตั้งเฟอร์นิเจอร์ในครัว กับทีมช่างมืออาชีพ ที่มีความเชี่ยวชาญและประสบการณ์ในงานช่างมากมาย",
+                "rentImage": ""
+            },
+            {
+                "rentId": 5,
+                "rentName": "บริการประกอบติดตั้ง",
+                "rentDiscription": "vFIX บริการประกอบติดตั้งงานเฟอร์นิเจอร์ ",
+                "rentImage": ""
+            },
+            {
+                "rentId": 6,
+                "rentName": "บริการประกอบติดตั้ง",
+                "rentDiscription": "vFIX บริการประกอบติดตั้งงานเฟอร์นิเจอร์ ",
+                "rentImage": ""
+            }
+        ]
+    },
+    "getBranches": {
+        "data": {
+            "branchList": [
+                {
+                    "branchId": 1,
+                    "branchName": "พันธ์ทวีสกลนคร สูงเนิน",
+                    "branchAddress": "150 ม.12 บ.สูงเนิน ต.พอกน้อย อ.พรรณานิคม จ.สกลนคร 47220",
+                    "branchLat": "17.291214894839236",
+                    "branchLng": "103.97416559491478",
+                    "contact": [ 
+                        {
+                            "contactName": "tel",
+                            "contactDetail": "0910104555"
+                        }
+                        
+                    ]
+                },
+                {
+                    "branchId": 2,
+                    "branchName": "พันธ์ทวีสกลนคร บัวสว่าง",
+                    "branchAddress": "28 ม.3 บ.บัวสว่าง ต.สว่าง อ.พรรณนานิคม จ.สกลนคร 47130",
+                    "branchLat": "17.328666664923908",
+                    "branchLng": "103.8664341282706",
+                    "contact": [ 
+                        {
+                            "contactName": "tel",
+                            "contactDetail": "0610203939"
+                        }
+                        
+                    ]
+                },
+                {
+                    "branchId": 3,
+                    "branchName": "พันธ์ทวีสกลนคร ตาลเลียน",
+                    "branchAddress": "305 ม. 3 ต.ช้างมิ้ง อ.พรรณานิคม จ.สกลนคร 47130",
+                    "branchLat": "17.337983203930147",
+                    "branchLng": "1103.7804185832717",
+                    "contact": [ 
+                        {
+                            "contactName": "tel",
+                            "contactDetail": "0885955388"
+                        }
+                        
+                    ]
+                },
+                {
+                    "branchId": 4,
+                    "branchName": "พันธ์ทวีสกลนคร ขมิ้น",
+                    "branchAddress": "416 ม. 2 ต.ขมิ้น อ.เมือง จ.สกลนคร 47220",
+                    "branchLat": "17.337983203930147",
+                    "branchLng": "103.7804185832717",
+                    "contact": [ 
+                        {
+                            "contactName": "tel",
+                            "contactDetail": "0887903938"
+                        }
+                        
+                    ]
+                },
+                {
+                    "branchId": 5,
+                    "branchName": "พันธ์ทวีสกลนคร เต่างอย",
+                    "branchAddress": "416 ม. 2 ต.ขมิ้น อ.เมือง จ.สกลนคร 47220",
+                    "branchLat": "17.002828103396457",
+                    "branchLng": "104.17149349387796",
+                    "contact": [ 
+                        {
+                            "contactName": "tel",
+                            "contactDetail": "0641819464"
+                        }
+                        
+                    ]
+                }
+            ]
+        }
     }
 }

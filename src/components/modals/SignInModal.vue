@@ -7,10 +7,14 @@
           <div class="modal-content">
             <h1 class="modal-title">เข้าสู่ระบบ</h1>
             <div class="content-container">
-              <div class="input-label">เบอร์โทรศัพท์ผู้ใช้งาน</div>
-              <input type="text" v-model="phoneNumber" />
-              <div class="input-label">รหัสผ่าน</div>
-              <input type="password" v-model="password" />
+              <div class="input-label">
+                <label for="">เบอร์โทรศัพท์ผู้ใช้งาน</label>
+                <input type="text" placeholder="เบอร์โทรศัพท์ผู้ใช้งาน" v-model="phoneNumber" />
+              </div>
+              <div class="input-label">
+                <label for="">รหัสผ่าน</label>
+                <input type="text" placeholder="รหัสผ่าน" v-model="password" />
+              </div>
             </div>
           </div>
           <div class="footer">
@@ -23,9 +27,9 @@
   </modal>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
-import UserService  from "../../services/UserService";
+import UserService from "../../services/UserService";
 
 export default defineComponent({
   name: "SignInModal",
@@ -42,10 +46,9 @@ export default defineComponent({
     },
     signIn: async function () {
       const resp = await UserService.signIn(this.phoneNumber, this.password);
-      console.log(resp);
       this.closeModal();
     },
-    created: function () {},
+    created: function () { },
   },
 });
 </script>
@@ -55,6 +58,7 @@ button {
   font-family: "Kanit-Regular";
   cursor: pointer;
 }
+
 .modal {
   display: flex;
   justify-content: center;
@@ -66,6 +70,13 @@ button {
   left: 0;
   background-color: rgba(145, 145, 145, 0.7);
   z-index: 1000;
+
+  ::placeholder {
+    color: var(--vt-c-black-opa);
+    opacity: 1;
+    /* Firefox */
+  }
+
   .modal-inner {
     position: relative;
     max-width: 640px;
@@ -73,20 +84,29 @@ button {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
     border-radius: 24px;
+
     .modal-content {
       padding: 16px 16px;
+
       .modal-title {
         display: flex;
         justify-content: center;
-        color: var(--vt-c-primary);
+        color: var(--vt-c-secondary);
+        font-size: 28px;
       }
+
       .content-container {
         padding: 0 24px;
+
         .input-label {
           margin-top: 1.5rem;
-          font-size: 1.5rem;
+        }
+
+        label {
+          font-size: 20px;
           color: var(--vt-c-primary);
         }
+
         input {
           margin-top: 0.5rem;
           width: 90%;
@@ -94,13 +114,17 @@ button {
           font-size: 1.5rem;
           padding: 0 16px;
           border-radius: 8px;
+          border: 1px solid var(--vt-c-black-opa);
+
         }
       }
     }
+
     .footer {
       display: flex;
       justify-content: center;
-      margin: 16px 24px;
+      margin: 32px 24px;
+
       .btn-cancel {
         font-size: 1.5rem;
         width: 8rem;
@@ -111,6 +135,7 @@ button {
         border-radius: 12px;
         color: var(--vt-c-secondary);
       }
+
       .btn-confirm {
         margin-left: 1rem;
         width: 8rem;

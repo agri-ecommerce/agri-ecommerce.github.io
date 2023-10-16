@@ -5,35 +5,39 @@
     <div>
       <Group @onSelectGroup="onSelectGroup" />
     </div>
+    <div class="delivery-icon" @click="onRedirect">
+      <IconDelivery color="#ffffff"/>
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .container-group {
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Kanit-Medium';
     color: var(--vt-c-secondary);
-
-    @media only screen and (max-width: 1900px) {
-      font-size: 24px;
-    }
 
     @media only screen and (max-width: 1300px) {
       font-size: 20px;
     }
   }
 
-  .container-item {
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
-    grid-template-columns: auto auto auto auto auto;
-    justify-items: center;
-
-    @media only screen and (max-width: 1900px) {
-      grid-template-columns: auto auto auto auto;
+  .delivery-icon {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    background-color: var(--vt-c-primary);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0px 10px 20px var(--vt-c-black-opa);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media only screen and (max-width: 1600px) {
+      right: 10px;
     }
   }
 }
@@ -44,6 +48,7 @@ import { defineComponent } from "vue";
 import Banner from "@/components/layouts/Banner.vue";
 import ItemProduct from "@/components/layouts/ItemProduct.vue";
 import Group from "@/components/layouts/Group.vue";
+import IconDelivery from "@/components/icons/IconDelivery.vue";
 import { path } from "@/common/path";
 export default defineComponent({
   name: "GroupList",
@@ -55,7 +60,8 @@ export default defineComponent({
   components: {
     Banner,
     ItemProduct,
-    Group
+    Group,
+    IconDelivery
   },
   created() {
     this.initData();
@@ -63,12 +69,14 @@ export default defineComponent({
   methods: {
     async initData() {
     },
-    onSelectGroup(data: any) {
-      // this.$router.push({ path: `${this.paths.productList.path}/${data.categoryGroupItemId}` });
-      this.$router.push({
+    async onSelectGroup(data: any) {
+      await this.$router.push({
         name: this.paths.productList.name,
         params: { filterId: data },
       })
+    },
+    onRedirect() {
+      window.open("https://flashexpress.com/", "_blank");
     }
   },
 });

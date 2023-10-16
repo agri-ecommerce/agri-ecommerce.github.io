@@ -18,18 +18,15 @@
   .content {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1000px;
 
 
     .list-item {
       h1 {
-        font-size: 32px;
+        font-size: 24px;
         font-family: 'Kanit-Medium';
         color: var(--vt-c-secondary);
 
-        @media only screen and (max-width: 1366px) {
-          font-size: 24px;
-        }
 
         @media only screen and (max-width: 1024px) {
           font-size: 18px;
